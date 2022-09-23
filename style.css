@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400&display=swap');
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 0 auto;
+}
+
+.calculator-container {
+  width: 500px;
+  height: 600px;
+
+  display: grid;
+  grid-template-rows: 150px 1fr;
+
+  background-color: rgba(39,37,36,255);
+
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.calculator-data-container {
+  background-color: rgba(39,37,36,255);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+
+  padding-inline: 40px;
+}
+
+.calculator-data {
+  text-align: right;
+
+  color: #fff;
+
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  font-size: 60px;
+}
+
+.calculator-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2px;
+}
+
+.calculator-button {
+  border-radius: 0;
+  border: none;
+  color: #fff;
+
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 35px;
+}
+
+.calculator-button.button-dark {
+  background-color: rgba(60,58,57,255);
+}
+
+.calculator-button.button-dark:active {
+  background-color: rgba(80,78,77,255);
+}
+
+.calculator-button.button-accent {
+  background-color: rgba(255,159,12,255);
+}
+
+.calculator-button.button-accent:active {
+  background-color: rgba(235,139,0,255);
+}
+
+.calculator-button.button-grey {
+  background-color: rgba(92,91,90,255);
+}
+
+.calculator-button.button-grey:active {
+  background-color: rgba(112,111,110,255);
+}
+
+.calculator-button.button-big {
+  grid-column: span 2;
+}
